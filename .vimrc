@@ -13,10 +13,14 @@ set hidden
 set nu
 set backspace=indent,eol,start
 
+" default tab to 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
-"BOL and EOL map to Leader H and Leader L respectively
-nmap <Leader>l $
-nmap <Leader>h 0
+"BOL and EOL map to H and L respectively
+nmap <S-L> $
+nmap <S-H> 0
 
 "Change tabs using Shift-J (previous) and Shift-K (next)
 nmap <S-J> :tabp<CR>
